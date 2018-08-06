@@ -65,6 +65,7 @@ namespace HotelsAPI.Controllers
                     address += temporaryAddress;
                     address += ", ";
                 }
+                address=address.Replace("Ä\u0081", "a");
                 hotels.Add(
                     new Hotel()
                     {
